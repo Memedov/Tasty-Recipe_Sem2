@@ -1,0 +1,511 @@
+/************** main.css *****************/
+/* Homepage of Tasty Recipes */
+body{ 
+    line-height: 1; 
+    color: black;
+    background-image: url(indexImage.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+h1{
+    text-align: center;
+    font-size: 200%;
+}
+
+h2{
+    text-align: center;
+    font-size: 110%;
+}
+
+p{
+    margin-top: 2%;
+    text-align: left;
+    font-size: 110%;
+    font-variant: normal;
+    color: black;
+}
+
+.calendar p{
+    text-align: left;
+}
+
+.InnerBox{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5%;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.InnerBox p{
+    color: black;
+    text-align: left;
+    font-variant: normal;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.InnerBox a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/*****************************************/
+/* Menu for all pages */
+.Menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+    opacity: 0.85;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.Menu li{
+    float: left;
+}
+
+/* Login alternative on menu */
+.Menu li:last-child{
+    float: right;
+}
+
+.Menu li a{
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.Menu li a:hover{
+    background-color: #544;
+}
+
+.Menu .active{
+    background-color: #544;
+}
+
+/*****************************************/
+/*** Page of Pancakes ***/
+.InnerBoxPancakes{
+    margin-top: 8%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.OuterBoxPancakes{
+    position: relative;
+}
+
+.OuterBoxPancakes img{
+    float: right;
+    width: 30%;
+    margin: 0%;
+    margin-left: 2%;
+    padding: 0;
+}
+
+ul#PancakesIngr{
+    position: relative;
+    width: 75%;
+    padding: 0;
+    margin-left: 5%;
+    list-style-type: disc;
+    margin-top: 1%;
+}
+
+.PancakesInstr ol{
+    padding: 0;
+    margin-bottom: 80%;
+    margin-right: 90%;
+    display: table-row;
+    list-style-type:decimal;
+    list-style-position: outside;
+}
+.PancakesInstr li{
+    padding: 0;
+    margin: 1%;
+    margin-left: 2%;
+    margin-bottom: 0%;
+}
+
+
+/*****************************************/
+/*** Page of Meatballs ***/
+.InnerBoxMeatballs{
+    margin-top: 8%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    background: rgba(255, 255, 255, 0.8);
+
+}
+.OuterBoxMeatballs{
+    position: relative;
+}
+
+.OuterBoxMeatballs img{
+    float: right;
+    width: 45%;
+    margin: 0;
+    margin-top: 5%;
+    padding: 0;
+}
+
+ul#MeatballsIngr{
+    position: relative;
+    width: 75%;
+    padding: 0;
+    margin-left: 5%;
+    list-style-type: disc;
+    padding-top: 1%;
+}
+
+ul#MeatballsIngr li{
+    color: black;
+    margin-top: 1%;
+}
+
+.MeatballsInstr ol{
+    padding: 0;
+    margin-bottom: 80%;
+    margin-right: 90%;
+    display: table-row;
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+
+.MeatballsInstr li{
+    padding: 0;
+    margin: 1%;
+    margin-left: 2%;
+}
+
+/*****************************************/
+/* Comment section of recipe pages */
+hr{
+    margin-top: 4%;
+    border: 0;
+    height: 1px;
+    background: black;
+    background-image: linear-gradient(to right, lightgray, black, lightgray);
+}
+
+input[type=text], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 50%;
+    background-color: skyblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 25%;
+}
+input[type=submit]:hover{
+    background-color: deepskyblue;
+}
+
+/* Delete button of user-comments */
+.CommentBox input[type=submit]{
+    background-color: orangered;
+    width: 10%;
+    border: none;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0px;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+.CommentBox input[type=submit]:hover{
+    background-color: red;
+}
+
+.Comment{
+    margin: 0;
+    margin-top: 2%;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.CommentBox .Comment{
+    margin-top: 2%;
+    font-family: serif;
+    font-variant: normal;
+    font-size: 100%;
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1%;
+    margin-right: 50%;
+    border-radius: 10px;
+    height: 40%;
+    width: 70%;
+    overflow: hidden;
+}
+
+.CommentBox .Comment p{
+    font-size: 90%;
+    font-variant: normal;
+    margin: 1%;
+    margin-top: 2%;
+    margin-bottom: 0px;
+    padding: 0px;
+    color: black;
+    overflow: hidden;
+}
+
+/****************************************/
+/* Calendar */
+.InnerBoxCalendar{
+    margin: 5%;
+    margin-bottom: 0%;
+    background: rgba(255, 255, 255, 0.8);
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.OuterBoxCalendar{
+    position: relative;
+    color: black;
+}
+
+.Month p{
+    margin-top: 2%;
+    width: 852px;
+    height: 25px;
+    float: left;
+    border: 1px solid darkslategrey;
+    background-color: white;
+    text-align: center;
+    font-size: 150%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Month #text{
+    color: black;
+    text-align: center;
+    padding-top: 0.3%;
+    margin-left: 16.5%;
+}
+
+.nextrow{
+    clear: left; 
+    background-color: white;
+    width: 120px;
+    height: 100px;
+    float: left;
+    border: 1px solid darkslategrey;
+    color: darkslategrey;
+    margin-left: 16.5%
+}
+.nextrow p{
+    text-align: left;
+}
+
+.days{
+  background-color: white;
+  width: 120px;
+  height: 100px;
+  float: left;
+  border: 1px solid darkslategrey;
+  color: darkslategrey;    
+}
+
+.oct30{
+    clear: left;
+    background-color: white;
+    opacity: 0.8;
+    width: 120px;
+    height: 100px;
+    float: left;
+    border: 1px solid darkslategrey;
+    color: darkgrey;
+    margin-left: 16.5%;
+    z-index: auto;
+}
+.oct30 p{
+    text-align: left;
+    color: black;
+    opacity: 0.7;
+}
+
+.anothermonth{
+    background-color: whitesmoke;
+    opacity: 0.9;
+    width: 120px;
+    height: 100px;
+    float: left;
+    border: 1px solid darkslategrey;
+}
+.anothermonth p{
+    text-align: left;
+    opacity: 0.7;
+    color: black;
+}
+
+.meatballs{
+    width: 120px;
+    height: 100px;
+    float: left;
+    border: 1px solid darkslategrey; background: url(ItalianMeatballs.jpg); 
+    background-size: cover;   
+}
+
+.pancakes{
+    width: 120px;
+    height: 100px;
+    float: left;
+    border: 1px solid darkslategrey;
+    background-image: url(SwedishPancakes.jpg); 
+    background-size: cover; 
+    text-align: left;
+}
+
+.lastrow{
+    background-color: white;
+    width: 120px;
+    height: 100px;
+    float: left;
+    border: 1px solid darkslategrey;
+    color: darkslategrey;
+    background-color: white;
+    margin-bottom:10%;
+}
+
+.lastrow p{
+    text-align: left;
+}
+
+.calendar div{
+    width: 120px;
+    height: 20px;
+    padding-top: 0.3%;
+    float: left;
+    border: 1px solid darkslategrey;
+    color: darkslategrey;    
+}
+
+.days p{
+    text-align: left;
+}
+
+/*This covers all '#day' except #Monday*/
+.calendar div{
+    background-color: white;
+    text-align: center;
+}
+
+#monday{
+    text-align: center;
+    background-color: white;
+    clear: left;
+    margin-left: 16.5%;
+}
+
+/*****************************************/
+/*** Login page ***/
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 3% 3%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+button{
+    background-color: skyblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    background-color: deepskyblue;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: salmon;
+}
+.cancelbtn:hover{
+    background-color: red;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 15px 0 5px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 20%;
+}
+
+.container{
+    padding: 3%;
+}
+
+span.psw{
+    float: right;
+    padding-top: 15px;
+}
+
+
+/*****************************************/
+/* Queries for different screens-sizes
+@media screen and (max-width: 1600px) and (min-width: 721px){
+    .weekdays, .days{
+        width: 15%;
+    }
+}
+
+@media screen and (max-width:720px) and (min-width: 421px){
+    .weekdays li, .days{
+        width: 15%;
+        height: 10%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li{
+        width: 12.5%;
+    }
+    .days li .active{
+        padding: 2%;
+    }
+}
+*/
